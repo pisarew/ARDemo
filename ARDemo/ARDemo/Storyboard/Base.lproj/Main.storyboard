@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gh8-Cw-jNR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Выбр модели-->
+        <scene sceneID="Odb-p1-4hN">
+            <objects>
+                <viewController id="5sH-b2-xzm" customClass="MainViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lDh-Yt-eAO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ogr-YR-K6J">
+                                <rect key="frame" x="109.66666666666669" y="288.66666666666669" width="174" height="275.00000000000006"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-y4-bVJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Санаторий">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="paimoAction:" destination="5sH-b2-xzm" eventType="touchUpInside" id="8Zj-kh-0aa"/>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="gmx-f7-TNM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEv-1P-LAA">
+                                        <rect key="frame" x="0.0" y="75" width="174" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Дракон">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="dragonAction:" destination="5sH-b2-xzm" eventType="touchUpInside" id="xts-Ja-Y8f"/>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="2ho-fg-96Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLv-61-dLu">
+                                        <rect key="frame" x="0.0" y="150" width="174" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Кратос">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="kratosAction:" destination="5sH-b2-xzm" eventType="touchUpInside" id="nMU-sc-Br1"/>
+                                            <action selector="voidAction:" destination="5sH-b2-xzm" eventType="touchUpInside" id="cbC-fd-FZj"/>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="ahI-6Y-2ho"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-bF-HVZ">
+                                        <rect key="frame" x="0.0" y="224.99999999999994" width="174" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ничего">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="voidAction:" destination="5sH-b2-xzm" eventType="touchUpInside" id="x41-mL-oeK"/>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="JFn-lg-1fw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="u2p-bF-HVZ" firstAttribute="leading" secondItem="ogr-YR-K6J" secondAttribute="leading" id="6To-h9-Jw0"/>
+                                    <constraint firstItem="zLv-61-dLu" firstAttribute="top" secondItem="nEv-1P-LAA" secondAttribute="bottom" constant="25" id="7G2-Ac-hcf"/>
+                                    <constraint firstItem="RjV-y4-bVJ" firstAttribute="top" secondItem="ogr-YR-K6J" secondAttribute="top" id="Bxr-sO-jFp"/>
+                                    <constraint firstAttribute="trailing" secondItem="RjV-y4-bVJ" secondAttribute="trailing" id="Eug-Gz-bwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="nEv-1P-LAA" secondAttribute="trailing" id="LkP-el-mwn"/>
+                                    <constraint firstItem="zLv-61-dLu" firstAttribute="leading" secondItem="ogr-YR-K6J" secondAttribute="leading" id="S6m-zl-wwI"/>
+                                    <constraint firstItem="u2p-bF-HVZ" firstAttribute="top" secondItem="zLv-61-dLu" secondAttribute="bottom" constant="25" id="SGB-7z-ROq"/>
+                                    <constraint firstAttribute="trailing" secondItem="zLv-61-dLu" secondAttribute="trailing" id="SzH-zX-n79"/>
+                                    <constraint firstAttribute="trailing" secondItem="u2p-bF-HVZ" secondAttribute="trailing" id="Ttn-5D-FQ5"/>
+                                    <constraint firstItem="nEv-1P-LAA" firstAttribute="leading" secondItem="ogr-YR-K6J" secondAttribute="leading" id="Xec-Mp-dn9"/>
+                                    <constraint firstItem="nEv-1P-LAA" firstAttribute="top" secondItem="RjV-y4-bVJ" secondAttribute="bottom" constant="25" id="eGh-do-EZ8"/>
+                                    <constraint firstItem="RjV-y4-bVJ" firstAttribute="leading" secondItem="ogr-YR-K6J" secondAttribute="leading" id="pjc-pv-kp1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cVc-tn-9Lu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ogr-YR-K6J" firstAttribute="centerY" secondItem="lDh-Yt-eAO" secondAttribute="centerY" id="WGl-tj-PNg"/>
+                            <constraint firstItem="ogr-YR-K6J" firstAttribute="centerX" secondItem="lDh-Yt-eAO" secondAttribute="centerX" id="bFZ-j8-cwM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Выбр модели" largeTitleDisplayMode="always" id="gp4-F1-FTr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4J-Wt-kaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315.26717557251908" y="-35.211267605633807"/>
+        </scene>
+        <!--Viewer View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewerViewController" customModule="ARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstAttribute="bottom" secondItem="BrB-h1-WRS" secondAttribute="bottom" id="fXF-Uf-a5c"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EvB-4K-gkj"/>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.7251908396945" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="69d-jb-Y7c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gh8-Cw-jNR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="McZ-Y3-08u">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5sH-b2-xzm" kind="relationship" relationship="rootViewController" id="ews-g2-PKI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWH-rp-Xe9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-611.45038167938924" y="-35.211267605633807"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JFn-lg-1fw"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
